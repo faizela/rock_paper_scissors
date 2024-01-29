@@ -16,7 +16,6 @@ function singleRound(playerSelection, computerSelection) {
    return ('You WIN! rock beats scissors')
  } 
  else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper'){
-    console.log(1)
     return ('You LOSE! paper beats rock')
  }
  else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock'){
