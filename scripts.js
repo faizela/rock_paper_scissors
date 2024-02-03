@@ -75,33 +75,6 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-// console.log(cpuScore)
-// console.log(playerScore)
-// console.log(playRound(playerSelection, computerSelection))
-// console.log(cpuScore)
-// console.log(playerScore)
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-      console.log(`round ${i+1}`)
-      console.log(playRound(playerSelection, computerSelection))
-      console.log(`Player score is ${playerScore}`)
-      console.log(`Cpu score is ${cpuScore}`)
-    }
 
-   if (cpuScore > playerScore){
-      console.log('CPU wins!')
-   }
-   else if (playerScore > cpuScore) {
-      console.log('Player Wins!')
-   }
-}
-
-game()
-
-// console.log(playRound(playerSelection, computerSelection))
-// console.log(playRound(playerSelection, computerSelection))
-// console.log(playRound(playerSelection, computerSelection))
-// console.log(playRound(playerSelection, computerSelection))
-// console.log(playRound(playerSelection, computerSelection))
 
