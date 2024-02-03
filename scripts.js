@@ -5,9 +5,14 @@ function getComputerChoice () {
 }
 
 
+const rock = document.getElementById('rock')
+const paper = document.getElementById('paper')
+const scissors = document.getElementById('scissors')
+const results = document.getElementById('results')
 
-const playerSelection = prompt('Enter your choice - rock or paper or scissors! ')
+// const playerSelection = prompt('Enter your choice - rock or paper or scissors! ')
 const computerSelection = getComputerChoice()
+
 
 let cpuScore = 0
 let playerScore = 0
@@ -75,6 +80,18 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
+rock.addEventListener('click', function() {
+   results.innerText = playRound('rock', computerSelection)
+ }) 
 
+
+paper.addEventListener('click', function() {
+   results.innerText = playRound('paper', computerSelection)
+ }) 
+
+
+scissors.addEventListener('click', function() {
+   results.innerText = playRound('scissors', computerSelection)
+ }) 
 
 
