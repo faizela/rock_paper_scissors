@@ -9,6 +9,9 @@ const rock = document.getElementById('rock')
 const paper = document.getElementById('paper')
 const scissors = document.getElementById('scissors')
 const results = document.getElementById('results')
+const playerscoreid = document.getElementById('playerscore')
+const cpuscoreid = document.getElementById('cpuscore')
+const winner = document.getElementById('winner')
 
 // const playerSelection = prompt('Enter your choice - rock or paper or scissors! ')
 const computerSelection = getComputerChoice()
@@ -17,10 +20,11 @@ const computerSelection = getComputerChoice()
 let cpuScore = 0
 let playerScore = 0
 
+// cpuscoreid.innerText += `Cpu score is ${cpuScore}`
 
 function isRock(playerSelection, computerSelection) {
    if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors'){
-      playerScore += 1
+     playerScore += 1
       return ('You WIN! rock beats scissors')
     } 
     else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper'){
@@ -53,6 +57,7 @@ function isPaper(playerSelection, computerSelection){
    if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock'){
       playerScore += 1
       return ('You WIN! paper beats rock ')
+      
    }
    else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'scissors'){
       cpuScore += 1
@@ -93,5 +98,7 @@ paper.addEventListener('click', function() {
 scissors.addEventListener('click', function() {
    results.innerText = playRound('scissors', computerSelection)
  }) 
+
+
 
 
