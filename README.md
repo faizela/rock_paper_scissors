@@ -11,7 +11,7 @@ To make a rock and paper scissors game in the forms of buttons.
 ---
 ## Goals later down the road
 
-- [] Improve the styling and ui of the project
+- [ ] Improve the styling and ui of the project
   
 
 
