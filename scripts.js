@@ -25,10 +25,16 @@ let playerScore = 0
 function isRock(playerSelection, computerSelection) {
    if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors'){
      playerScore += 1
+     if (playerScore <= 5) {  
+     playerDisplay()
+     }
       return ('You WIN! rock beats scissors')
     } 
     else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper'){
       cpuScore += 1
+      if (cpuScore <= 5) {  
+         cpuDisplay()
+         }
        return ('You LOSE! paper beats rock')
     }
     else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock'){
@@ -42,10 +48,16 @@ function isRock(playerSelection, computerSelection) {
 function isScissors(playerSelection, computerSelection) {
    if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'paper'){
       playerScore += 1
+      if (playerScore <= 5) {  
+         playerDisplay()
+         }
        return ('You WIN! scissors beats rock ')
     }
     else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'rock'){
       cpuScore += 1
+      if (cpuScore <= 5) {  
+         cpuDisplay()
+         }
        return ('You LOSE! rock beats scissors')
     }
     else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'scissors'){
@@ -56,11 +68,19 @@ function isScissors(playerSelection, computerSelection) {
 function isPaper(playerSelection, computerSelection){
    if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock'){
       playerScore += 1
-      return ('You WIN! paper beats rock ')
+
+      if (playerScore <= 5) {  
+         playerDisplay()
+         }
+         return ('You WIN! paper beats rock ')
+      
       
    }
    else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'scissors'){
       cpuScore += 1
+      if (cpuScore <= 5) {  
+         cpuDisplay()
+         }
       return ('You LOSE! scissors beats paper')
    }
    else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'paper'){
@@ -102,3 +122,17 @@ scissors.addEventListener('click', function() {
 
 
 
+function playerDisplay(){
+   console.log(playerScore.innerText)
+   playerscoreid.innerText = playerScore
+   if (playerScore == 5) {
+      winner.innerText = 'Player - you are the winner!'
+   }
+}
+
+function cpuDisplay(){
+   cpuscoreid.innerText = cpuScore
+   if (cpuScore == 5) {
+      winner.innerText = 'Cpu - you are the winner!'
+   }
+}
