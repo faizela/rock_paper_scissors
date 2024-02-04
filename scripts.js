@@ -123,7 +123,6 @@ scissors.addEventListener('click', function() {
 
 
 function playerDisplay(){
-   console.log(playerScore.innerText)
    playerscoreid.innerText = playerScore
    if (playerScore == 5) {
       winner.innerText = 'Player - you are the winner!'
