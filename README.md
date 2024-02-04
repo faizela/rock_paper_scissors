@@ -7,7 +7,7 @@ Rock paper scissors is a project in the Odin Project Foundations sections which 
 ---
 To make a rock and paper scissors game in the forms of buttons.
 
-##
+
 ---
 ## Goals later down the road
 
