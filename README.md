@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors
 
-Rock paper scissors is a project in the Odin Project Foundations section which demonstrates DOM Manipulations Skills.
+Rock paper scissors is a project in the Odin Project Foundations section which demonstrates Js fundamentals and DOM Manipulations Skills.
 
 
 ## Projects Aims
